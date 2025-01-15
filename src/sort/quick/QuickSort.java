@@ -1,6 +1,6 @@
 package sort.quick;
 
-public class QuickSortV1 {
+public class QuickSort {
 
     public void quickSort(int[] arr, int start, int end) {
         int pivotIndex = partition(arr, start, end);
