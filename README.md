@@ -5,4 +5,4 @@
 + 정렬
 
   + 퀵 정렬 (QuickSort)
-  + 병합 정렬 (MerghSort)
+  + 병합 정렬 (MergeSort)
