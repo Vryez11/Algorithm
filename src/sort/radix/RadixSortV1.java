@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class RadixSort {
+//자릿수를 큐에 저장
+
+public class RadixSortV1 {
 
     public static void radixSort(int[] arr) {
         Queue<Integer>[] jarisuQueue = new Queue[10];

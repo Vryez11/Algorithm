@@ -2,7 +2,7 @@ package sort;
 
 import sort.merge.MergeSort;
 import sort.quick.QuickSort;
-import sort.radix.RadixSort;
+import sort.radix.RadixSortV1;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class SortMain {
 
         MergeSort.mergeSort(arr, 0, arr.length - 1);
         QuickSort.quickSort(copyArr, 0, copyArr.length - 1);
-        RadixSort.radixSort(cocopyArr);
+        RadixSortV1.radixSort(cocopyArr);
 
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(copyArr));
