@@ -1,15 +1,17 @@
 package sort.quick;
 
+import java.util.Arrays;
+
 public class QuickSort {
 
-    public void quickSort(int[] arr, int start, int end) {
+    public static void quickSort(int[] arr, int start, int end) {
         int pivotIndex = partition(arr, start, end);
 
         if (pivotIndex - 1 > start) quickSort(arr, start, pivotIndex - 1);
         if (pivotIndex + 1 < end) quickSort(arr, pivotIndex + 1, end);
     }
 
-    private int partition(int[] arr, int start, int end) {
+    private static int partition(int[] arr, int start, int end) {
         if (start + 1 == end) {
             if (arr[start] > arr[end])
                 swap(arr, start, end);
@@ -21,14 +23,16 @@ public class QuickSort {
         int pivot = arr[start];
         int i = start + 1; int j = end;
         while (i <= j) {
-            while (arr[i] < pivot && i <= end) {
+            while (i <= end && arr[i] < pivot) {
                 i++;
             }
-            while (arr[j] > pivot && j >= start + 1) {
+            while (j >= start + 1 && arr[j] > pivot) {
                 j--;
             }
             if (i <= j) {
                 swap(arr, i, j);
+                i++;
+                j--;
             }
         }
 
@@ -37,7 +41,7 @@ public class QuickSort {
         return j;
     }
 
-    private void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
