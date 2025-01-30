@@ -1,6 +1,6 @@
 package search.binary;
 
-public class Binary{
+public class Binary {
 
     public static <E extends Comparable<E>> boolean binary (E[] arr, E findValue) {
 
