@@ -22,3 +22,8 @@
   + 벨만 포드 (BellmanFordMoore)
   + 플로이드 워샬 (FloydWarshall)
   + 최소 신장 트리 (MinimumSpanningTree)
+
++ 트리
+
+  + 트라이 (Trie)
+  + 세그먼트 트리 (SegmentTree)
