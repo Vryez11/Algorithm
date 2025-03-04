@@ -6,7 +6,7 @@
 
   + 퀵 정렬 (QuickSort)
   + 병합 정렬 (MergeSort)
-  + 기수 정렬 (RadixSortV1(Queue) , RadixSortV2(Array))
+  + 기수 정렬 (RadixSortV1(Queue), RadixSortV2(Array))
 
 + 탐색
 
@@ -27,3 +27,4 @@
 
   + 트라이 (Trie)
   + 세그먼트 트리 (SegmentTree)
+  + 최소 공통 조상 (NavieLCA, FastLCA)
